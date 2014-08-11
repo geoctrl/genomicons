@@ -1,0 +1,73 @@
+/*
+Syntax error: Undefined mixin 'box-sizing-content'.
+        on line 119 of _base.scss, in `box-sizing-content'
+        from line 119 of _base.scss
+
+114: .clearfix {
+115:   @include clearfix;
+116: }
+117: 
+118: .box-sizing-content {
+119:   @include box-sizing-content;
+120: }
+121: 
+122: .is-hidden      { display: none !important; }
+123: .is-invisible   { visibility: none !important; }
+124: 
+
+Backtrace:
+_base.scss:119:in `box-sizing-content'
+_base.scss:119
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/engine.rb:274:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/exec.rb:489:in `watch_or_update'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/exec.rb:346:in `process_result'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/exec.rb:43:in `parse'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/exec.rb:22:in `parse!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/bin/scss:13:in `<top (required)>'
+C:/Ruby200-x64/bin/scss:23:in `load'
+C:/Ruby200-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'box-sizing-content'.\A         on line 119 of _base.scss, in `box-sizing-content'\A         from line 119 of _base.scss\A \A 114: .clearfix {\A 115:   @include clearfix;\A 116: }\A 117: \A 118: .box-sizing-content {\A 119:   @include box-sizing-content;\A 120: }\A 121: \A 122: .is-hidden      { display: none !important; }\A 123: .is-invisible   { visibility: none !important; }\A 124: "; }

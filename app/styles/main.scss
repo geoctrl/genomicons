@@ -1,3 +1,68 @@
-@import "genomicons/style.css";
-
+@import "modules/prefix";
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/type";
+@import "genomicons/genomicons";
+@import "klartext/klartextmono_bold/stylesheet.css";
+@import "klartext/klartextmono_medium/stylesheet.css";
+@IMPORT "klartext/klartextmono_light/stylesheet.css";
 @import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+
+
+
+
+
+.logo {
+  font-family: 'klartext_monobold', monospace;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  font-size: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin: 40px 0 10px 0;
+  color: $color-red-3;
+  
+  .status {
+    color: $color-grey-3;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'klartext_monomedium', monospace;
+    font-weight: $font-weight-normal;
+    font-size: 30px;
+  }
+}
+
+.top-nav {
+  width: 700px;
+  border-top: solid 3px $color-white-4;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  cursor: default;
+
+  li {
+    display: inline-block;
+    margin: -3px 10px 0 10px;
+    border-top: solid 3px transparent;
+    padding: 10px;
+    font-family: 'klartext_monobold';
+    
+    a {
+      text-decoration: none;
+      color: $color-grey-3;
+      
+      &:hover {
+        color: $color-red-3;
+      }
+    }
+    
+    &.isActive {
+      border-color: $color-red-3;
+      
+      a {
+        color: $color-red-3;
+      }
+    }
+  }
+}

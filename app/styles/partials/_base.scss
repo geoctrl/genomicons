@@ -1,0 +1,162 @@
+// font weights
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// base font
+$base-font-family: 'Roboto', Arial, sans-serif;
+$base-font-weight: $font-weight-normal;
+$base-font-size: 14px;
+
+// font sizes
+$text-size-large: 16px;
+$text-size-small: 12px;
+
+// colors
+$color-teal-1: #52c1b1;
+$color-teal-2: #2bad9d;
+$color-teal-3: #13978b;
+$color-teal-4: #068273;
+$color-teal-5: #006657;
+
+$color-white-1: #ffffff;
+$color-white-2: #f3f3f3;
+$color-white-3: #e3e3e3;
+$color-white-4: #d3d3d3;
+$color-white-5: #c3c3c3;
+
+$color-grey-1: #a0a0a0;
+$color-grey-2: #909090;
+$color-grey-3: #808080;
+$color-grey-4: #595959;
+$color-grey-5: #404040;
+
+$color-blue-1: #76aace;
+$color-blue-2: #6599c4;
+$color-blue-3: #5089c0;
+$color-blue-4: #437ba8;
+$color-blue-5: #356a8e;
+
+$color-red-1: #d87668;
+$color-red-2: #d1604a;
+$color-red-3: #c15a42;
+$color-red-4: #aa4b39;
+$color-red-5: #93473d;
+
+// z-index order of importance
+$z-index-1: 10;
+$z-index-2: 20;
+$z-index-3: 30;
+$z-index-4: 40;
+$z-index-5: 50;
+$z-index-override-all: 9999;
+
+// global breakpoints
+$break-tablet: 828px;
+$break-computer: 1052px;
+$break-computer-wide: 1260px;
+
+// grid gutter sizes (in percentages)
+$gutter-large: 5%;
+$gutter-medium: 4%;
+$gutter-small: 3%;
+$base-gutter: $gutter-small;
+
+// nav sizes
+$main-header-height: 66px;
+$page-header-height: 56px;
+
+// global natural box layout
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: auto;
+  height: auto;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $color-white-2;
+  font-family: 'klartext_monomedium' monospace;
+  color: $color-grey-3;
+  font-size: 16px;
+}
+
+a {
+  color: $color-blue-3;
+  text-decoration: none;
+  cursor: pointer;
+  
+  &:hover {
+    text-decoration: underline;
+    color: $color-blue-5;
+  }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after { content: ""; display: table; }
+  &:after { clear: both; }
+  zoom: 1;
+}
+
+// global modifiers
+.clearfix {
+  @include clearfix;
+}
+
+.box-sizing-content {
+  @include box-sizing-content;
+}
+
+.is-hidden      { display: none !important; }
+.is-invisible   { visibility: none !important; }
+
+.block          { display: block !important; }
+.inline         { display: inline !important; }
+.inline-block   { display: inline-block !important; }
+
+.pull-left      { float: left !important; }
+.pull-right     { float: right !important; }
+
+.text-left      { text-align: left !important; }
+.text-right     { text-align: right !important; }
+.text-center    { text-align: center !important; }
+
+// quick margin classes
+.mr-small       { margin-right: 5px !important; }
+.mr-medium      { margin-right: 10px !important; }
+.mr-large       { margin-right: 20px !important; }
+.ml-small       { margin-left: 5px !important; }
+.ml-medium      { margin-left: 10px !important; }
+.ml-large       { margin-left: 20px !important; }
+.mt-small       { margin-top: 5px !important; }
+.mt-medium      { margin-top: 10px !important; }
+.mt-large       { margin-top: 20px !important; }
+.mb-small       { margin-bottom: 5px !important; }
+.mb-medium      { margin-bottom: 10px !important; }
+.mb-large       { margin-bottom: 20px !important; }
+
+// quick padding classes
+.pr-small       { padding-right: 5px !important; }
+.pr-medium      { padding-right: 10px !important; }
+.pr-large       { padding-right: 20px !important; }
+.pl-small       { padding-left: 5px !important; }
+.pl-medium      { padding-left: 10px !important; }
+.pl-large       { padding-left: 20px !important; }
+.pt-small       { padding-top: 5px !important; }
+.pt-medium      { padding-top: 10px !important; }
+.pt-large       { padding-top: 20px !important; }
+.pb-small       { padding-bottom: 5px !important; }
+.pb-medium      { padding-bottom: 10px !important; }
+.pb-large       { padding-bottom: 20px !important; }
