@@ -1,4 +1,4 @@
-// Generated on 2014-08-10 using generator-angular 0.9.5
+// Generated on 2014-08-11 using generator-angular 0.9.5
 'use strict';
 
 // # Globbing
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
       },
       jsTest: {
         files: ['test/spec/{,*/}*.js'],
-        tasks: ['newer:jshint:test', 'karma']
+        tasks: [/*'newer:jshint:test',*/ 'karma']
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
@@ -199,7 +199,7 @@ module.exports = function (grunt) {
       },
       server: {
         options: {
-          debugInfo: false
+          debugInfo: true
         }
       }
     },
@@ -433,7 +433,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'newer:jshint',
+    //'newer:jshint',
     'test',
     'build'
   ]);

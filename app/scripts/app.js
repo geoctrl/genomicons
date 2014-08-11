@@ -9,30 +9,25 @@
  * Main module of the application.
  */
 var genomiconsApp = angular
-  .module('genomiconsApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch',
-    'ui.router'
-  ]);
+    .module('genomiconsApp', [
+        'ngAnimate',
+        'ngTouch',
+        'ui.router'
+    ]);
 
-genomiconsApp
-  .config(function ($stateProvider, $urlRouterProvider) {
+genomiconsApp.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/all');
     
     $stateProvider
-      .state('all', {
-        url: '/all',
-        views: {
-          'nav': {
-            templateUrl: 'views/nav.html'
-          },
-          'content': {
-            templateUrl: 'views/all.html'
-          }
-        }
-      })
-  });
+        .state('all', {
+            url: '/all',
+            views: {
+                'nav': {
+                    templateUrl: 'views/nav.html'
+                },
+                'content': {
+                    templateUrl: 'views/all.html'
+                }
+            }
+        })
+});
