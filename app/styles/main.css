@@ -1,12 +1,14 @@
+@import url(../../bower_components/bootstrap/dist/css/bootstrap.min.css);
+@import url(genomicons/genomicons.css);
+@import url(klartext/klartextmono_bold/stylesheet.css);
+@import url(klartext/klartextmono_medium/stylesheet.css);
+@import url(klartext/klartextmono_light/stylesheet.css);
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(klartext/klartextmono_bold/stylesheet.css);
-@import url(klartext/klartextmono_medium/stylesheet.css);
-@import url(../../bower_components/bootstrap/dist/css/bootstrap.min.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -370,9 +372,10 @@ body {
   margin: 0;
   padding: 0;
   background: #f3f3f3;
-  font-family: 'klartext_monomedium' monospace;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: gray;
-  font-size: 16px; }
+  font-size: 18px; }
 
 a {
   color: #5089c0;
@@ -527,245 +530,29 @@ h4, h5, h6 {
     font-size: .8em;
     color: gray; }
 
-.w-icon {
-  vertical-align: middle; }
-
-.gi {
-  vertical-align: middle;
-  font-size: 20px; }
-  .gi.left {
-    margin-right: 6px; }
-  .gi.right {
-    margin-left: 6px; }
-  .gi.gi-14 {
-    font-size: 14px;
-    vertical-align: baseline; }
-  .gi.gi-3x {
-    font-size: 3em; }
-  .gi.gi-4x {
-    font-size: 4em; }
-  .gi.gi-5x {
-    font-size: 4em; }
-  .gi.gi-origin {
-    font-size: 20px; }
-
-@font-face {
-  font-family: 'Genomicons';
-  src: url("Genomicons.eot?wnsndn");
-  src: url("Genomicons.eot?#iefixwnsndn") format("embedded-opentype"), url("Genomicons.woff?wnsndn") format("woff"), url("Genomicons.ttf?wnsndn") format("truetype"), url("Genomicons.svg?wnsndn#Genomicons") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="gi-"], [class*=" gi-"] {
-  font-family: 'Genomicons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-  [class^="gi-"].gi-spin, [class*=" gi-"].gi-spin {
-    -webkit-animation: spin 2s infinite linear;
-    -moz-animation: spin 2s infinite linear;
-    -o-animation: spin 2s infinite linear;
-    animation: spin 2s infinite linear; }
-@-moz-keyframes spin {
-  [class^="gi-"] 0% , [class*=" gi-"] 0%  {
-    -moz-transform: rotate(0deg); }
-  [class^="gi-"] 100% , [class*=" gi-"] 100%  {
-    -moz-transform: rotate(359deg); } }
-@-webkit-keyframes spin {
-  [class^="gi-"] 0% , [class*=" gi-"] 0%  {
-    -webkit-transform: rotate(0deg); }
-  [class^="gi-"] 100% , [class*=" gi-"] 100%  {
-    -webkit-transform: rotate(359deg); } }
-@-o-keyframes spin {
-  [class^="gi-"] 0% , [class*=" gi-"] 0%  {
-    -o-transform: rotate(0deg); }
-  [class^="gi-"] 100% , [class*=" gi-"] 100%  {
-    -o-transform: rotate(359deg); } }
-@keyframes spin {
-  [class^="gi-"] 0% , [class*=" gi-"] 0%  {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  [class^="gi-"] 100% , [class*=" gi-"] 100%  {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
-.gi-arrow-down:before {
-  content: "\e600"; }
-
-.gi-arrow-left:before {
-  content: "\e601"; }
-
-.gi-arrow-right:before {
-  content: "\e602"; }
-
-.gi-arrow-up:before {
-  content: "\e603"; }
-
-.gi-atom:before {
-  content: "\e604"; }
-
-.gi-briefcase:before {
-  content: "\e605"; }
-
-.gi-check:before {
-  content: "\e606"; }
-
-.gi-eye:before {
-  content: "\e607"; }
-
-.gi-eye-alt:before {
-  content: "\e608"; }
-
-.gi-file:before {
-  content: "\e609"; }
-
-.gi-file-refresh:before {
-  content: "\e60a"; }
-
-.gi-file-text:before {
-  content: "\e60b"; }
-
-.gi-file-view:before {
-  content: "\e60c"; }
-
-.gi-first-aid:before {
-  content: "\e60d"; }
-
-.gi-flask-empty:before {
-  content: "\e60e"; }
-
-.gi-flask-fill:before {
-  content: "\e60f"; }
-
-.gi-flask-full:before {
-  content: "\e610"; }
-
-.gi-flask-plus:before {
-  content: "\e611"; }
-
-.gi-flask-plus-fill:before {
-  content: "\e612"; }
-
-.gi-flasks:before {
-  content: "\e613"; }
-
-.gi-gear:before {
-  content: "\e614"; }
-
-.gi-home:before {
-  content: "\e615"; }
-
-.gi-hospital:before {
-  content: "\e616"; }
-
-.gi-key:before {
-  content: "\e617"; }
-
-.gi-lock:before {
-  content: "\e618"; }
-
-.gi-lock-alt:before {
-  content: "\e619"; }
-
-.gi-map:before {
-  content: "\e61a"; }
-
-.gi-menu:before {
-  content: "\e61b"; }
-
-.gi-menu-alt:before {
-  content: "\e61c"; }
-
-.gi-pencil:before {
-  content: "\e61d"; }
-
-.gi-planet:before {
-  content: "\e61e"; }
-
-.gi-pulse:before {
-  content: "\e61f"; }
-
-.gi-pulse-heart:before {
-  content: "\e620"; }
-
-.gi-push-pin:before {
-  content: "\e621"; }
-
-.gi-push-pin-alt:before {
-  content: "\e622"; }
-
-.gi-question-mark:before {
-  content: "\e623"; }
-
-.gi-refresh:before {
-  content: "\e624"; }
-
-.gi-refresh-alt:before {
-  content: "\e625"; }
-
-.gi-save:before {
-  content: "\e626"; }
-
-.gi-search:before {
-  content: "\e627"; }
-
-.gi-search-minus:before {
-  content: "\e628"; }
-
-.gi-search-plus:before {
-  content: "\e629"; }
-
-.gi-share:before {
-  content: "\e62a"; }
-
-.gi-sort:before {
-  content: "\e62b"; }
-
-.gi-times:before {
-  content: "\e62c"; }
-
-.gi-trash:before {
-  content: "\e62d"; }
-
-.gi-unlock:before {
-  content: "\e62e"; }
-
-.gi-unlock-alt:before {
-  content: "\e62f"; }
-
-.gi-upgrade:before {
-  content: "\e630"; }
-
-.gi-warning:before {
-  content: "\e631"; }
-
-.gi-white-label:before {
-  content: "\e632"; }
-
-@IMPORT "klartext/klartextmono_light/stylesheet.css";
 .logo {
-  font-family: 'klartext_monobold', monospace;
+  font-family: 'klartext', monospace;
   font-weight: 700;
   text-align: center;
   font-size: 80px;
   height: 80px;
   line-height: 80px;
-  margin: 40px 0 10px 0;
+  margin: 10px 0 10px 0;
   color: #c15a42; }
   .logo .status {
     color: gray;
     display: inline-block;
     margin-left: 10px;
-    font-family: 'klartext_monomedium', monospace;
+    font-family: 'klartext', monospace;
     font-weight: 400;
     font-size: 30px; }
 
+.head-atom {
+  font-size: 150px;
+  margin-top: 20px;
+  height: 170px; }
+
 .top-nav {
-  width: 700px;
   border-top: solid 3px lightgray;
   margin: 0 auto;
   list-style: none;
@@ -777,7 +564,8 @@ h4, h5, h6 {
     margin: -3px 10px 0 10px;
     border-top: solid 3px transparent;
     padding: 10px;
-    font-family: 'klartext_monobold'; }
+    font-family: 'klartext';
+    font-weight: 700; }
     .top-nav li a {
       text-decoration: none;
       color: gray; }
@@ -787,3 +575,27 @@ h4, h5, h6 {
       border-color: #c15a42; }
       .top-nav li.isActive a {
         color: #c15a42; }
+
+.home-count {
+  font-family: 'klartext', monospace;
+  font-weight: 400;
+  font-size: 40px;
+  width: 520px;
+  border-bottom: solid 3px #c3c3c3;
+  margin: 0 auto;
+  padding: 40px 0 20px 0; }
+
+.home-icon-set {
+  text-align: center;
+  padding-top: 40px; }
+  .home-icon-set .icon-box {
+    width: 120px;
+    text-align: center;
+    height: 120px;
+    font-size: 80px;
+    line-height: 120px;
+    display: inline-block;
+    border: solid 4px #e3e3e3;
+    border-radius: 10px;
+    margin: 0 10px;
+    overflow: hidden; }

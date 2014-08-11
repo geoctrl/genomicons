@@ -1,57 +1,222 @@
-/*
-Syntax error: Base-level rules cannot contain the parent-selector-referencing character '&'.
-        on line 180 of genomicons.scss
+@font-face {
+    font-family: 'Genomicons';
+    src:url('Genomicons.eot?wnsndn');
+    src:url('Genomicons.eot?#iefixwnsndn') format('embedded-opentype'),
+    url('Genomicons.woff?wnsndn') format('woff'),
+    url('Genomicons.ttf?wnsndn') format('truetype'),
+    url('Genomicons.svg?wnsndn#Genomicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-175: }
-176: .gi-white-label:before {
-177: 	content: "\e632";
-178: }
-179: 
-180: &.gi-spin {
-181:   -webkit-animation: spin 2s infinite linear;
-182:   -moz-animation: spin 2s infinite linear;
-183:   -o-animation: spin 2s infinite linear;
-184:   animation: spin 2s infinite linear;
-185: }
+[class^="gi-"], [class*=" gi-"] {
+    font-family: 'Genomicons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-Backtrace:
-genomicons.scss:180
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/selector/comma_sequence.rb:34:in `resolve_parent_refs'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:384:in `visit_rule'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:151:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/engine.rb:274:in `render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `each'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/exec.rb:489:in `watch_or_update'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/exec.rb:346:in `process_result'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/exec.rb:43:in `parse'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/exec.rb:22:in `parse!'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.8/bin/scss:13:in `<top (required)>'
-C:/Ruby200-x64/bin/scss:23:in `load'
-C:/Ruby200-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Base-level rules cannot contain the parent-selector-referencing character '&'.\A         on line 180 of genomicons.scss\A \A 175: }\A 176: .gi-white-label:before {\A 177: 	content: \"\e632\";\A 178: }\A 179: \A 180: &.gi-spin {\A 181:   -webkit-animation: spin 2s infinite linear;\A 182:   -moz-animation: spin 2s infinite linear;\A 183:   -o-animation: spin 2s infinite linear;\A 184:   animation: spin 2s infinite linear;\A 185: }"; }
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+[class^="gi-"].gi-spin, [class*=" gi-"].gi-spin {
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+}
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+
+
+.gi-arrow-down:before {
+    content: "\e600";
+}
+.gi-arrow-left:before {
+    content: "\e601";
+}
+.gi-arrow-right:before {
+    content: "\e602";
+}
+.gi-arrow-up:before {
+    content: "\e603";
+}
+.gi-atom:before {
+    content: "\e604";
+}
+.gi-briefcase:before {
+    content: "\e605";
+}
+.gi-check:before {
+    content: "\e606";
+}
+.gi-eye:before {
+    content: "\e607";
+}
+.gi-eye-alt:before {
+    content: "\e608";
+}
+.gi-file:before {
+    content: "\e609";
+}
+.gi-file-refresh:before {
+    content: "\e60a";
+}
+.gi-file-text:before {
+    content: "\e60b";
+}
+.gi-file-view:before {
+    content: "\e60c";
+}
+.gi-first-aid:before {
+    content: "\e60d";
+}
+.gi-flask-empty:before {
+    content: "\e60e";
+}
+.gi-flask-fill:before {
+    content: "\e60f";
+}
+.gi-flask-full:before {
+    content: "\e610";
+}
+.gi-flask-plus:before {
+    content: "\e611";
+}
+.gi-flask-plus-fill:before {
+    content: "\e612";
+}
+.gi-flasks:before {
+    content: "\e613";
+}
+.gi-gear:before {
+    content: "\e614";
+}
+.gi-home:before {
+    content: "\e615";
+}
+.gi-hospital:before {
+    content: "\e616";
+}
+.gi-key:before {
+    content: "\e617";
+}
+.gi-lock:before {
+    content: "\e618";
+}
+.gi-lock-alt:before {
+    content: "\e619";
+}
+.gi-map:before {
+    content: "\e61a";
+}
+.gi-menu:before {
+    content: "\e61b";
+}
+.gi-menu-alt:before {
+    content: "\e61c";
+}
+.gi-pencil:before {
+    content: "\e61d";
+}
+.gi-planet:before {
+    content: "\e61e";
+}
+.gi-pulse:before {
+    content: "\e61f";
+}
+.gi-pulse-heart:before {
+    content: "\e620";
+}
+.gi-push-pin:before {
+    content: "\e621";
+}
+.gi-push-pin-alt:before {
+    content: "\e622";
+}
+.gi-question-mark:before {
+    content: "\e623";
+}
+.gi-refresh:before {
+    content: "\e624";
+}
+.gi-refresh-alt:before {
+    content: "\e625";
+}
+.gi-save:before {
+    content: "\e626";
+}
+.gi-search:before {
+    content: "\e627";
+}
+.gi-search-minus:before {
+    content: "\e628";
+}
+.gi-search-plus:before {
+    content: "\e629";
+}
+.gi-share:before {
+    content: "\e62a";
+}
+.gi-sort:before {
+    content: "\e62b";
+}
+.gi-times:before {
+    content: "\e62c";
+}
+.gi-trash:before {
+    content: "\e62d";
+}
+.gi-unlock:before {
+    content: "\e62e";
+}
+.gi-unlock-alt:before {
+    content: "\e62f";
+}
+.gi-upgrade:before {
+    content: "\e630";
+}
+.gi-warning:before {
+    content: "\e631";
+}
+.gi-white-label:before {
+    content: "\e632";
+}

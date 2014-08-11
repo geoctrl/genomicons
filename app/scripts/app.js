@@ -16,17 +16,17 @@ var genomiconsApp = angular
     ]);
 
 genomiconsApp.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/all');
+    $urlRouterProvider.otherwise('/home');
     
     $stateProvider
-        .state('all', {
-            url: '/all',
+        .state('home', {
+            url: '/home',
             views: {
                 'nav': {
                     templateUrl: 'views/nav.html'
                 },
                 'content': {
-                    templateUrl: 'views/all.html'
+                    templateUrl: 'views/home.html'
                 }
             }
         })

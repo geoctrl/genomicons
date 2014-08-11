@@ -1,39 +1,43 @@
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+@import "genomicons/genomicons.css";
+@import "klartext/klartextmono_bold/stylesheet.css";
+@import "klartext/klartextmono_medium/stylesheet.css";
+@import "klartext/klartextmono_light/stylesheet.css";
 @import "modules/prefix";
 @import "partials/normalize";
 @import "partials/base";
 @import "partials/type";
-@import "genomicons/genomicons";
-@import "klartext/klartextmono_bold/stylesheet.css";
-@import "klartext/klartextmono_medium/stylesheet.css";
-@IMPORT "klartext/klartextmono_light/stylesheet.css";
-@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
-
 
 
 
 
 .logo {
-  font-family: 'klartext_monobold', monospace;
+  font-family: 'klartext', monospace;
   font-weight: $font-weight-bold;
   text-align: center;
   font-size: 80px;
   height: 80px;
   line-height: 80px;
-  margin: 40px 0 10px 0;
+  margin: 10px 0 10px 0;
   color: $color-red-3;
   
   .status {
     color: $color-grey-3;
     display: inline-block;
     margin-left: 10px;
-    font-family: 'klartext_monomedium', monospace;
+    font-family: 'klartext', monospace;
     font-weight: $font-weight-normal;
     font-size: 30px;
   }
 }
 
+.head-atom {
+  font-size: 150px;
+  margin-top: 20px;
+  height: 170px;
+}
+
 .top-nav {
-  width: 700px;
   border-top: solid 3px $color-white-4;
   margin: 0 auto;
   list-style: none;
@@ -46,7 +50,8 @@
     margin: -3px 10px 0 10px;
     border-top: solid 3px transparent;
     padding: 10px;
-    font-family: 'klartext_monobold';
+    font-family: 'klartext';
+    font-weight: $font-weight-bold;
     
     a {
       text-decoration: none;
@@ -64,5 +69,37 @@
         color: $color-red-3;
       }
     }
+  }
+}
+
+
+
+
+
+.home-count {
+  font-family: 'klartext', monospace;
+  font-weight: 400;
+  font-size: 40px;
+  width: 520px;
+  border-bottom: solid 3px $color-white-5;
+  margin: 0 auto;
+  padding: 40px 0 20px 0;
+}
+
+.home-icon-set {
+  text-align: center;
+  padding-top: 40px;
+  
+  .icon-box {
+    width: 120px;
+    text-align: center;
+    height: 120px;
+    font-size: 80px;
+    line-height: 120px;
+    display: inline-block;
+    border: solid 4px $color-white-3;
+    border-radius: 10px;
+    margin: 0 10px;
+    overflow: hidden;
   }
 }
