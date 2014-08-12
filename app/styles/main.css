@@ -548,9 +548,9 @@ h4, h5, h6 {
     font-size: 30px; }
 
 .head-atom {
-  font-size: 150px;
+  font-size: 120px;
   margin-top: 20px;
-  height: 170px; }
+  height: 180px; }
 
 .top-nav {
   border-top: solid 3px lightgray;
@@ -576,6 +576,25 @@ h4, h5, h6 {
       .top-nav li.isActive a {
         color: #c15a42; }
 
+button.button {
+  border: solid 1px #c15a42;
+  color: #c15a42;
+  font-size: 20px;
+  height: 40px;
+  line-height: 10px;
+  font-family: 'klartext', monospace;
+  background: transparent;
+  padding: 0 14px;
+  border-radius: 2px; }
+  button.button.isActive {
+    background: #c15a42;
+    color: #fff; }
+  button.button span {
+    vertical-align: middle; }
+  button.button:hover {
+    background-color: #c15a42;
+    color: #fff; }
+
 .home-count {
   font-family: 'klartext', monospace;
   font-weight: 400;
@@ -593,7 +612,7 @@ h4, h5, h6 {
     text-align: center;
     height: 120px;
     font-size: 80px;
-    line-height: 120px;
+    line-height: 90px;
     display: inline-block;
     border: solid 4px #e3e3e3;
     border-radius: 10px;

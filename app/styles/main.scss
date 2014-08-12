@@ -32,9 +32,9 @@
 }
 
 .head-atom {
-  font-size: 150px;
+  font-size: 120px;
   margin-top: 20px;
-  height: 170px;
+  height: 180px;
 }
 
 .top-nav {
@@ -76,6 +76,32 @@
 
 
 
+button.button {
+  border: solid 1px $color-red-3;
+  color: $color-red-3;
+  font-size: 20px;
+  height: 40px;
+  line-height: 10px;
+  font-family: 'klartext', monospace;
+  background: transparent;
+  padding: 0 14px;
+  border-radius: 2px;
+  
+  &.isActive {
+    background: $color-red-3;
+    color: #fff;
+  }
+  
+  span {
+    vertical-align: middle;
+  }
+  
+  &:hover {
+    background-color: $color-red-3;
+    color: #fff;
+  }
+}
+
 .home-count {
   font-family: 'klartext', monospace;
   font-weight: 400;
@@ -95,7 +121,7 @@
     text-align: center;
     height: 120px;
     font-size: 80px;
-    line-height: 120px;
+    line-height: 90px;
     display: inline-block;
     border: solid 4px $color-white-3;
     border-radius: 10px;
